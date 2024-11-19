@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image/x-icon" href="images/logo2.png">
+   <link rel="stylesheet" href="web.css">
+   <title>System Station.in</title>
+
+<style>
+    
+</style>
+</head>
+<body>
+    <div class="main"><BR>
+        <marquee scrollamount="18"><B>EXTRA 5% DISCOUNT FOR FOR ORDERS ABOVE &#8377;20,999/-</B></marquee>
+    </div>
+    <div class="smain">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo2.png" style="height: 80px; width: 120px;" onclick="op">
+            </a>
+        </div>
+        <div class="cont">
+            <ul type="none">
+            <b>
+                <li class="dropdown"><a href="Home.jsp" id="head">Home</a></li>
+                
+                <li class="dropdown"><a href="laptop.html" id="head">Laptops</a></li>
+
+                <li class="dropdown"><a href="computer.html" id="head">Computers</a>
+                  
+                </li>
+                <li class="dropdown"><a href="peripherals.html" id="head">Peripherals</a>
+                    
+                </li>
+                <li class="dropdown"><a href="laptopspares.html" id="head">Laptop Spares</a>
+                    
+                </li>
+               
+                <li class="dropdown"><a href="others.html" id="head">Others</a>
+                    
+                </li>
+               </b>
+            </ul>
+        </div>
+        <div class="search-bar">
+            <input type="search" id="search" placeholder="Search...">
+            <button type="button" onclick="searchFunction()">Search</button>
+        </div>
+        <div class="order">
+            <a href="#">
+                <input type="hidden" name="un" value="<%=username%>" style="border:none;" readonly>
+                <abbr title="Order">
+                    <img src="images/orderlogo1.png" style="height: 25px; margin-top:32px;">
+            </a>
+        </div>
+        <div class="wish">
+            <a href="wishlist.jsp">
+                <input type="hidden" name="un" value="<%=username%>" style="border:none;" readonly>
+                <abbr title="WishList">
+                    <img src="images/wish1.png" style="height: 25px;">
+            </a>
+        </div>
+        <div class="cart">
+            <form action="cart.jsp" method="post">
+                <input type="hidden" name="un" value="<%=username%>" style="border:none;" readonly>
+                <abbr title="Cart">
+                    <button style="background-color:transparent; border:none; cursor:pointer;">
+                        <img src="images/cart1.png" style="height: 25px;">
+                    </button>
+            </form>
+        </div>
+        <div class="profile"><br>
+            <a href="ViewProfile.jsp?u=<%=rs.getString(2)%>"><abbr title="Profile"><img src="images/profile1.png" style="height: 28px;"></a>
+        </div>
+        <div class="login"><br>
+            <a href="logout.html"><abbr title="Logout"> <img src="images/logout.png" style="height: 25px;"></abbr></a>
+        </div>        
+    </div>
+    <div class="tmain">
+        <b>Discover Digital Delights</b>
+    </div>
+
+    <div class="card6" >
+        <div style="display: flex;">
+            <h2 style="padding: 20px; ">Latest Arrivals</h2>
+        </div>
+        <div class="c">
+            <a href="delle2422hn.html" style="text-decoration: none;">
+            <div class="homecontent">
+                
+                    <img class="lazyloaded" src="images/products/latest/a1.jpg" style="width:100%; height: 70%; margin:auto;"> 
+                        
+                            <p class="desc" ><b>Dell E2422HN 24 Inch Full HD LED-Backlit LCD Monitor</p>
+                            <p class="amt">&#8377;1,363.00</b> <del>&#8377;29,599.00</del></p>
+                            <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+        </a>
+        </div>
+        
+        <div class="c">
+            <a href="DisplayPortCable.html" style="text-decoration: none;">
+            <div class="homecontent">
+                
+                    <img class="lazyloaded" src="images/products/latest/a2.jpg" style="width:100%; height: 70%; margin:auto;">
+                        
+                            <p class="desc"><b>Display Port to Display Port Cable- Female-to-Female </p>
+                            <p class="amt">&#8377;1,100.00</b> <del>&#8377;1,750.00</del> </p>
+                        
+                            <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+        </a>
+        </div>
+
+        <div class="c">
+            <a href="Lenovomonitor.html" style="text-decoration: none;">
+            <div class="homecontent">
+                
+                    <img class="lazyloaded" src="images/products/latest/a3.jpg" style="width:100%; height: 70%; margin:auto;">
+                        
+                            <p class="desc"><b>Lenovo ThinkVision S24e-2023.8 FHD Monitor </p>
+                            <p class="amt">&#8377;8,373.00</b><del>&#8377;12,050.00</del> </p>
+                        
+                            <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+        </a>
+        </div>
+
+        <div class="c">
+            <a href="WesternDigital1TB.html" style="text-decoration: none;">
+            <div class="homecontent">
+                
+                    <img class="lazyloaded" src="images/products/latest/a4.jpg" style="width:100%; height: 70%; margin:auto;">
+                        
+                            <p class="desc"><b>Western Digital 1TB SATA7200RPM 3.5 Desktop Hard Disk</p>
+                            <p class="amt">&#8377;2,700.00</b><del>&#8377;3,999.00</del> </p>
+                            <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+        </a>
+        </div>
+        <div class="c">
+            <a href="#" style="text-decoration: none;">
+            <div class="homecontent">
+                
+                    <img class="lazyloaded" src="images/products/latest/a5.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc"><b>Transcend 1TB Store Jet USB:3.0 25M3 External Hard Drive</p>
+                    <p class="amt">&#8377;5,300.00 </b><del>&#8377;5,999.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+            </a>
+        </div>
+           
+            <div class="c">
+                <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    
+                    <img class="lazyloaded" src="images/products/latest/a8.jpg" style="width:100%; height: 70%; margin:auto;"><br>
+                    <p class="desc" ><b>Norton Antivirus 360 v6 1 PC/ Year</p>
+                    <p class="amt">&#8377;1,887.00</b> <del>&#8377;2,100.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+            </div>
+
+            <div class="c">
+                <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    
+                    <img class="lazyloaded" src="images/products/latest/a11.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc" ><b>HP Laptop 15s, 12th Gen Intel Core i3, 15.6-inch (39.6 cm)</p>
+                    <p class="amt">&#8377;36,990.00</b> <del>&#8377;41,550.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+            </div>
+            <div class="c">
+                <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    
+                    <img class="lazyloaded" src="images/products/latest/cpu.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc" ><b>Zebronics Zeb-Athena PRO Gaming Chassis CPU</p>
+                    <p class="amt">&#8377;3,699.00</b> <del>&#8377;4,700.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+            </div>
+            <div class="c">
+                <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    
+                    <img class="lazyloaded" src="images/products/latest/key.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc" ><b>Kreo Hive Anti-ghosting Gaming Keyboard with RGB LED Backlight Blue Switches</p>
+                    <p class="amt">&#8377;3,299.00</b> <del>&#8377;4,200.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+            </div>
+            <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/latest/mouse.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc" ><b>HP M120 Wireless Mouse, USB-A Nano Dongle, 2.4 Ghz Wireless Connection</p>
+                    <p class="amt">&#8377;539.00</b> <del>&#8377;999.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+            </div>
+            <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/latest/printer.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc" ><b>HP Ink Advantage Ultra 4929 Print, Copy, Scan, Self Reset WiFi, Smart App Setup</p>
+                    <p class="amt">&#8377;7,799.00</b> <del>&#8377;9,900.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+            </div>
+            <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/latest/copm.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc" ><b>(Refurbished) Lenovo ThinkCenter 19 " AIO Desktop Set</p>
+                    <p class="amt">&#8377;13,940.00</b> <del>&#8377;16,390.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+            </div>
+
+            <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/latest/adapter.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc" ><b>Artis 61 Watts USB Type C Laptop Adapter/Charger Compatible with MB Pro 13t</p>
+                    <p class="amt">&#8377;1,699.00</b> <del>&#8377;3,390.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+            </div>
+
+            <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/latest/cpu2.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc" ><b>CHIST Gaming PC (Core i7-860 Processor / DDR3 16GB Ram/ 1TB SSD)</p>
+                    <p class="amt">&#8377;13,940.00</b> <del>&#8377;16,390.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+            </div>
+
+            <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/latest/mac.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc" ><b>Apple 2024 MacBook Air (13-inch, M3 chip with 8 core CPU and 8 core GPU)</p>
+                    <p class="amt">&#8377;1,14,900.00</b> <del>&#8377;1,66,390.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+            </div>
+            <div class="bottom">
+               
+                <div class="info">
+                    <h1><b>SUPPORT</b></h1><br>
+                    <p><a class="abc" href="contactus.html">Contact Us</a></p>
+                </div>
+        
+                <div class="info">
+                    <h1><b>INFORMATION</b></h1><br>
+                    <p><a class="abc" href="footer/aboutus.html">About Us</a></p>
+                    <p><a  class="abc" href="footer/refurbish.html">Refurbishing Information</a></p>
+                    <p><a class="abc" href="footer/installation.html">Installation</a></p>
+                </div>
+        
+                <div class="info">
+                    <h1>POLICIES</h1><br>
+                    <p> <a class="abc" href="footer/privacypolicy.html">Privacy & Policy</a></p>
+                    <p><a class="abc" href="footer/termscondition.html">Terms & Condition</a></p>
+                    <p><a class="abc" href="footer/cancelrefund.html">Cancel & Refund Policy</a></p>
+                    <p><a class="abc" href="footer/shipping.html">Shipping & Delivery Policy</a></p>
+                </div>
+        
+                <div class="info">
+                    <h1>FAQ'S</h1><br>
+             
+                    <p> <a class="abc" href="footer/warrenty.html">Warrenty Upgrade</a></p>
+                    <p><a class="abc" href="footer/installation.html">Installation & Configuration</a></p>
+                    <p><a class="abc" href="footer/exchange.html">Exchange & Buy Pack</a></p>
+                </div>    
+        
+            </div>
+        
+            <div class="bot2">
+                <img src="footer/bottom.png" style="height: 80px; width: 70%;" >
+            </div>
+        
+            <div class="bot3">
+                <b><a href="footer/termscondition.html">Terms & Condition</a></b> 
+            </div>
+        
+            <div class="bot4">
+                <img src="footer/payment_icon.png" style="height: 80px; width: 70%;" >
+            </div>
+    </div>
+</div>

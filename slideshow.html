@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    /* Custom styles */
+    .sidebar {
+      background-color: #f8f9fa;
+    }
+    .sidebar a {
+      display: block;
+      padding: 10px 15px;
+      color: #343a40;
+      text-decoration: none;
+    }
+    .sidebar a:hover {
+      background-color: #e9ecef;
+    }
+    .content {
+      padding: 20px;
+    }
+    .border-box {
+      border: 1px solid #dee2e6;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .border-box:hover .content-text {
+      display: block;
+    }
+    .content-text {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar -->
+      <nav class="col-md-3 col-lg-2 d-md-block sidebar">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-topic="total-sales">Sales Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-topic="top-products">Inventory Management</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-topic="website-traffic">Website Traffic and Performance</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-topic="order-management">Order Management</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Main content -->
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+        <div class="content">
+          <div class="border-box" id="total-sales">
+            <h2>Total Sales Revenue</h2>
+            <div class="content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+          </div>
+          <div class="border-box" id="top-products">
+            <h2>Top-selling Products</h2>
+            <div class="content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+          </div>
+          <div class="border-box" id="website-traffic">
+            <h2>Website Traffic</h2>
+            <h2>Conversion Rates</h2>
+            <div class="content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+          </div>
+          <div class="border-box" id="order-management">
+            <h2>Order Status</h2>
+            <h2>Order Fulfillment Time</h2>
+            <div class="content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Custom script -->
+  <script>
+    // JavaScript to toggle content based on sidebar link clicked
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', function(event) {
+        event.preventDefault();
+        const topic = this.getAttribute('data-topic');
+        document.querySelectorAll('.content .border-box').forEach(box => {
+          box.style.display = 'none';
+        });
+        document.getElementById(topic).style.display = 'block';
+      });
+    });
+  </script>
+</body>
+</html>

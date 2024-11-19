@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image/x-icon" href="images/logo2.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In </title>
+    <link rel="stylesheet" href="login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <div class="bg">
+        <form action="Home.jsp" method="post">
+    <div class="login-wrap">
+        <div class="login-html">
+            <h2 style="font-family: 'Times New Roman', Times, serif;text-align: center;font-size: 30px;">System Station</h2> 
+
+            
+            <label for="tab-1" class="tab">
+                Sign In
+            </label> 
+            
+            <div class="login-form">
+                <div class="sign-in-htm">
+                    <div class="group"> 
+                        <label for="user" class="label">
+                        Username
+                        </label> 
+                        <input id="user" type="text" class="input" name="username"> 
+                        <i style="position: absolute;
+                            right: 20px;
+                            top: 140px;" class='bx bxs-user'></i>
+                    </div>
+                    <!-- <div class="group"> 
+                        <label for="email" class="label">
+                        Email
+                        </label> 
+                        <input id="email" type="email" class="input" name="email">
+                        <i style="position: absolute;
+                        right: 20px;
+                        top: 220px;"  class='bx bxs-envelope' ></i> 
+                    </div> -->
+                    <div class="group"> 
+                        <label for="pass" class="label">
+                            Password
+                        </label> 
+                        <input id="pass" type="password" class="input" name="password">
+                        <i style="position: absolute;
+                        right: 20px;
+                        top: 220px;" class='bx bxs-lock-alt'></i> 
+                    </div>
+                    <div class="group" style="display: flex;"> 
+                        <input id="check" type="checkbox" class="check" checked>
+                        <label for="check" class="keepMe">
+                            Keep me Signed in
+                        </label>
+                        <div class="foot-lnk"> 
+                            <a href="emailotp.html">
+                                Forgot Password?
+                            </a> 
+                        </div>
+                    </div>
+                    <div class="group"> 
+                        <input type="submit" class="button" value="Sign In" style="color: white;"> 
+                    </div>
+                    <div class="hr"></div>
+                    <div class="register-link">
+                        <p>Don't have an account? <a href="register1.html" style="text-decoration: underline;">Register</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+
+</body>
+</html>

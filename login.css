@@ -1,0 +1,149 @@
+body { 
+    margin: 0; 
+    color: WHITE ; 
+    background-image: url(https://images.template.net/91491/black-aesthetic-background-lc4sb.jpg);
+    backdrop-filter: blur(3px);
+    background-size: cover;
+    font: 600 16px/18px "Open Sans", sans-serif; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  } 
+
+  *, :after, :before { 
+    box-sizing: border-box;
+  }
+  
+  a { 
+    color: inherit;
+    text-decoration: none; 
+  } 
+ 
+  
+  .login-wrap { 
+    width: 500px;
+    height: 580px; 
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    padding: 40px; 
+    background: none; 
+    border: solid white 2px;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 
+                0 17px 50px 0 rgba(0, 0, 0, 0.19); 
+  }
+  
+  .login-html  { 
+    top: 0; 
+    left: 0; 
+    right: 0;
+    bottom: 0; 
+    position: absolute; 
+    margin: 25px;
+  } 
+  
+  .login-html .tab,
+  .login-form .group .label, .login-form .group .button { 
+    text-transform: uppercase; 
+  } 
+  
+  .login-html .tab { 
+    font-size: 20px; 
+    cursor: pointer; 
+    padding-bottom: 5px; 
+    margin: 0 5px 5px 5px; 
+    display: inline-block;
+  } 
+  
+  
+  .login-form .group {
+    margin-bottom: 15px; 
+  } 
+  
+  .keepMe {
+    font-size: 15px;
+  }
+  
+  .login-form .group .label, .login-form .group .input,
+  .login-form .group .button { 
+    width: 100%; 
+    color: #fff; 
+    display: block; 
+  }
+  
+  .login-form .group .input, 
+  .login-form .group .button { 
+    border: none; 
+    padding: 10px; 
+      background: rgba(255, 255, 255, 0.1); 
+  }
+  
+ 
+  
+  .login-form .group .label { 
+    color: white; 
+    font-size: 10px; 
+    margin: 8px;
+  
+  } 
+  
+  .login-form .group .button { 
+    cursor: pointer; 
+    border: solid 2px white;
+    background: none;
+    box-shadow: 5px 5px 10px rgb(224, 224, 224),
+                5px 5px 50px rgb(224, 224, 224);
+  } 
+  
+  .login-form .group .button:hover { 
+    
+    background-color: rgba(249, 247, 247, 0.664); 
+    cursor: pointer; 
+    box-shadow: 5px 5px 10px rgb(224, 224, 224),
+                5px 5px 50px rgb(224, 224, 224);
+  } 
+  
+ 
+  .hr { 
+    height: 2px; 
+    margin: 20px 0 20px 0;
+    margin-bottom: 50px;
+    background: rgba(255, 255, 255, 0.2); 
+  } 
+  
+  
+  .foot-lnk { 
+     margin-left: 130px;
+     text-decoration: underline;
+  }
+  
+  .register-link{
+    text-align: center;
+  }
+  input {
+    border-radius: 20px;
+    border: solid white 2px;
+  }
+  
+  
+  #user.input {
+    background-color: none;
+  }
+  
+  
+  
+  #user.input, 
+  #pass.input,#email.input {
+  border: solid 2px white;
+  box-shadow: 5px 5px 10px rgb(224, 224, 224),
+              5px 5px 50px rgb(224, 224, 224);
+  }
+
+  .button {
+  transition: all 0.15s;
+  }
+  
+  .button:active {
+  opacity: 0.8;
+  }

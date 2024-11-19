@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://png.pngtree.com/background/20230413/original/pngtree-business-office-black-and-white-background-picture-image_2422991.jpg);
+    background-size: cover;
+    backdrop-filter:  blur(3px);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.registration-form {
+    display: flex;
+    background-color: transparent;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 600px;
+    box-shadow: 0px 0px 50px rgba(254, 252, 252, 100);
+}
+
+.left-side {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffffdd;
+    width: 700px;
+}
+
+.right-side {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.716);
+    color: #fff;
+}
+
+.right-side input{
+    width: calc(100% - 10px);
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    caret-color: white;
+    color: white;
+}
+
+.right-side h2{
+    margin-top: 60px;
+}
+
+h1{
+    margin-left: 650px;
+    color: aliceblue;
+}
+
+.left-side h1{
+    margin-left: 0px;
+    margin-top: 5px;
+    text-decoration: underline;
+    color: black;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.form-group .right-side {
+    display: block;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.left-side input {
+    width: calc(100% - 10px);
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+}
+
+.terms {
+    margin-top: 20px;
+    display: flex;
+}
+
+.terms label {
+    color: black;
+    margin-left: -220px;
+}
+
+.terms input {
+    margin-left:-220px;
+}
+
+#submit {
+    width: 500px;
+    margin-left: 500px;
+    height: 50px;
+    font-size: larger;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    background-color: rgba(245, 245, 245, 0.745);
+    border-radius: 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: normal;
+    cursor: pointer;    
+    outline: none;
+    border: none;   
+    color: black;
+    height: 46px;
+    box-shadow: 0px  10px 20px rgba(225, 225, 225, 0.5);
+    transition: all .3s ease;
+}
+
+#submit:hover {
+    opacity: .8;
+    background-color: black;
+    color: white;
+}
+
+.otpverify {
+    width: 100%;
+    margin-top:25px;
+    margin-right:20px;
+    border-radius:25px;
+    display:none;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.716);
+    padding:40px;
+}
+
+.otpverify  input{
+    width: 300px;
+    height: 40px;
+    text-align: center;
+}
+
+.otpverify  button{
+    width: 250px;
+    height: 40px;
+}

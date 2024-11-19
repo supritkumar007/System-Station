@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Station</title>
+
+    <style>
+        body{
+            background-image:url(images/l3.jpg);
+        }
+        h1{
+            margin-top: 100px;
+            margin-left: 650px;
+            font-size: 60px;
+            color: white;
+        }
+        
+        .veri{
+            width: 700px;
+            height: 300px;
+            border:2px solid white;
+            float: left;
+            text-align: center;
+            padding: 50px;
+            box-sizing: border-box;
+            margin-left: 450px;
+        }
+
+        .veri input{
+            display: block;
+            margin-bottom: 5px; 
+            margin: 10px;
+            width: 90%;
+            height: 40px;
+            padding: 10px;
+        }
+
+        .veri  button{  
+            display: block;
+            margin: auto;
+            margin-bottom: 50px;
+            width: 40%;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            background-color: darkblue;
+            border: none;   
+        }  
+        
+        .veri button:hover{
+            background-color: rgb(8, 112, 147);
+        }
+    </style>
+</head>
+<body>
+    <form action="verifyprofile.jsp" method="post">
+    <h1>System Station</h1>
+    <div class="veri">
+        <h2 style="color: white;">Enter your Profile Username: </h2>
+        <input type="text" name="pusername" id="" placeholder="Enter Profile Username"><br>
+        <button>Submit</button>
+    </div>
+</form>
+</body>
+</html>

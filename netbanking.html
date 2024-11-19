@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netbanking Information</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h2 {
+            margin-top: 0;
+            color: #000000;
+        }
+        .bank-selection {
+            margin-bottom: 20px;
+        }
+        select {
+            padding: 12px;
+            border-radius: 5px;
+            border: 1px solid #000000;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+            appearance: none;
+            background-color: #f5f5f5;
+            color: #555;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+        select:hover,select:focus {
+            border-color: #000000;
+        }
+        .bank-details {
+            text-align: left;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #f5f5f5;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .bank-details p {
+            margin: 5px 0;
+            font-size: 16px;
+            color: #000000;
+        }
+        .transaction-id {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            border-radius: 5px;
+            border: 1px solid #000000;
+            box-sizing: border-box;
+            font-size: 16px;
+            color: #000000;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+        input[type="text"]:focus {
+            border-color: #000000;
+        }
+        button {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #000000;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #727279;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Select Bank</h2>
+        <div class="bank-selection">
+            <select id="bank_selection">
+                <option value="">SELECT BANK</option>
+                <option value="SBI">STATE BANK OF INDIA</option>
+                <option value="CANARA">CANARA BANK</option>
+                <option value="UNION">UNION BANK</option>
+                <!-- Add more banks as needed -->
+            </select>
+        </div>
+        <div class="bank-details" id="bank_details">
+            <!-- Bank details will be displayed here -->
+        </div>
+        <div class="transaction-id">
+            <label for="transaction_id">Enter Transaction ID:</label>
+            <input type="text" id="transaction_id" name="transaction_id" placeholder="Transaction ID">
+        </div>
+        <button type="submit">Proceed</button>
+    </div>
+
+    <script>
+        document.getElementById("bank_selection").addEventListener("change", function() {
+            var selectedBank = this.value;
+            var bankDetailsElement = document.getElementById("bank_details");
+
+            // Clear previous bank details
+            bankDetailsElement.innerHTML = "";
+
+            // Display bank details based on selection
+            switch(selectedBank) {
+                case "SBI":
+                    bankDetailsElement.innerHTML = `
+                        <p>Bank Name: STATE BANK OF INDIA</p>
+                        <p>Branch: VIDYA NAGAR</p>
+                        <p>Account Number: 098876789675</p>
+                        <p>IFSC Code: XXXX1234</p>
+                        <!-- Add more details as needed -->
+                    `;
+                    break;
+                case "CANARA":
+                    bankDetailsElement.innerHTML = `
+                        <p>Bank Name: CANARA BANK</p>
+                        <p>Branch: LAKSHMI NAGAR</p>
+                        <p>Account Number: 895509871234</p>
+                        <p>IFSC Code: XXXX5678</p>
+                        <!-- Add more details as needed -->
+                    `;
+                    break;
+                case "UNION":
+                    bankDetailsElement.innerHTML = `
+                        <p>Bank Name: UNION BANK</p>
+                        <p>Branch: VIDYANAGAR</p>
+                        <p>Account Number: 142563570987</p>
+                        <p>IFSC Code: XXXX9012</p>
+                        <!-- Add more details as needed -->
+                    `;
+                    break;
+                // Add more cases for additional banks
+                default:
+                    break;
+            }
+        });
+    </script>
+</body>
+</html>

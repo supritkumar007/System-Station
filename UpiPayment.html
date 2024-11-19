@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPI QR Code</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #fff;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #000000;
+            border-radius: 8px;
+            text-align: center;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        .qr-code {
+            margin-top: 20px;
+        }
+        img {
+            border-radius: 5px;
+            max-width: 250px;
+            height: auto;
+        }
+        .transaction-id {
+            margin-top: 20px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #fff;
+            background-color: #333;
+            color: #fff;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Scan the QR Code to Make UPI Payment</h2>
+        <div class="qr-code">
+            <img src="qr.jpg" alt="UPI QR Code">
+        </div>
+        <div class="transaction-id">
+            <label for="transaction_id">Enter Transaction ID:</label><br>
+            <input type="text" id="transaction_id" name="transaction_id" placeholder="Transaction ID">
+        </div>
+    </div>
+</body>
+</html>

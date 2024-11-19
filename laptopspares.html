@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" href="web.css">
+   <title>Laptop Spares</title>
+   <link rel="icon" type="image/x-icon" href="images/logo2.png">
+
+<style>
+    
+</style>
+</head>
+<body>
+    <div class="main"><BR>
+        <marquee scrollamount="18"><B>EXTRA 5% DISCOUNT FOR ORDERS ABOVE &#8377;20,999/-</B></marquee>
+    </div>
+    <div class="smain">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo2.png" style="height: 80px; width: 120px;" onclick="op">
+            </a>
+        </div>
+        <div class="cont">
+            <ul type="none">
+            <b>
+                <li style="color:white;font-size:30px;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;cursor:pointer">System Station</li>
+                <li class="dropdown"><a href="laptopspares.html" id="head">Home</a></li>
+                
+                <li class="dropdown"><a href="laptop.html" id="head">Laptops</a></li>
+
+                <li class="dropdown"><a href="computer.html" id="head">Computers</a>
+                  
+                </li>
+                <li class="dropdown"><a href="peripherals.html" id="head">Peripherals</a>
+                    
+                </li>
+                <li class="dropdown"><a href="laptopspares.html" id="head">Laptop Spares</a>
+                    
+                </li>
+               
+                <li class="dropdown"><a href="others.html" id="head">Others</a>
+
+                <li class="dropdown"><a href="" id="head">|</a>
+                    
+                </li>
+               </b>
+            </ul>
+        </div>
+        <div class="order">
+            <a href="#">
+                <input type="hidden" name="un" value="<%=username%>" style="border:none;" readonly>
+                <abbr title="Order">
+                    <img src="images/orderlogo1.png" style="height: 25px; margin-top:32px;">
+            </a>
+        </div>
+        <div class="wish">
+            <a href="wishlist.jsp">
+                <input type="hidden" name="un" value="<%=username%>" style="border:none;" readonly>
+                <abbr title="WishList">
+                    <img src="images/wish1.png" style="height: 25px;">
+            </a>
+        </div>
+        <div class="cart">
+            <form action="cart.jsp" method="post">
+                <input type="hidden" name="un" value="<%=username%>" style="border:none;" readonly>
+                <abbr title="Cart">
+                    <button style="background-color:transparent; border:none; cursor:pointer;">
+                        <img src="images/cart1.png" style="height: 25px;">
+                    </button>
+            </form>
+        </div>
+        <div class="profile"><br>
+            <a href="ViewProfile.jsp?u=<%=rs.getString(2)%>"><abbr title="Profile"><img src="images/profile1.png" style="height: 28px;"></a>
+        </div>
+        <div class="login"><br>
+            <a href="logout.html"><abbr title="Logout"> <img src="images/logout.png" style="height: 25px;"></abbr></a>
+        </div>        
+    </div>
+    <div class="tmain">
+        <b>Discover Digital Delights</b>
+    </div>
+
+    <div class="card2" >
+        <div style="display: flex;">
+            <h2 style="padding: 20px; ">Adopters</h2>
+        </div>
+        <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/laptopspares/adopters/artis.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc" ><b>Artis 61 Watts USB Type C Laptop Adapter/Charger Compatible with MB Pro 13” (20.3V,3A). Connector: USB Type-C.</p>
+                    <p class="amt">&#8377;1,363.00</b> <del>&#8377;2,599.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+        </div>
+        <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/laptopspares/adopters/fugen.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc"><b>Fugen Compatible 87W USB C (USB 3.1) Type Power Adapter Laptop Charger. </p>
+                    <p class="amt">&#8377;1,199.00</b> <del>&#8377;2,750.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+        </div>
+        <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/laptopspares/adopters/gizga.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc"><b>Gizga Essentials Laptop Power Cable Cord- 3 Pin Adapter, 3 yrs Warranty (ISI Certified, 1 meter /3.3 Feet).</p>
+                    <p class="amt">&#8377;599.00</b><del>&#8377;1,550.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+        </div>
+        <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/laptopspares/adopters/ambrane.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc"><b>Ambrane 100W Charger Adapter, 4 Ports - 3 Type C & 1 USB for iPhone & Android, MacBook & Type C Laptop</p>
+                    <p class="amt">&#8377;2,599.00</b><del>&#8377;8,999.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+        </div>
+           
+
+
+           
+            
+   
+    <div style="display: flex;">
+        <h2 style="padding: 20px; padding-top: 50px;">Batteries</h2>
+    </div>
+    <div class="c">
+        <a href="#" style="text-decoration: none;">
+            <div class="homecontent">
+                <img class="lazyloaded" src="images/products/laptopspares/battries/hp.jpg" style="width:100%; height: 70%; margin:auto;">
+                <p class="desc" ><b>HP Original HS04 4-Cell Notebook Battery (N2L85AA) for HP 250G4/Pavilion 14/15-ac.</p>
+                <p class="amt">&#8377;2,398.00</b> <del>&#8377;6,599.00</del> </p>
+                <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+        </a>
+    </div>
+    <div class="c">
+        <a href="#" style="text-decoration: none;">
+            <div class="homecontent">
+                <img class="lazyloaded" src="images/products/laptopspares/battries/waster.jpg" style="width:100%; height: 70%; margin:auto;">
+                <p class="desc"><b>WISTAR HS04 Laptop Battery for HP 807956-001 807957-001. </p>
+                <p class="amt">&#8377;1,199.00</b> <del>₹&#8377;5,750.00</del> </p>
+                <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+        </a>
+    </div>
+    <div class="c">
+        <a href="#" style="text-decoration: none;">
+            <div class="homecontent">
+                <img class="lazyloaded" src="images/products/laptopspares/battries/dell.jpg" style="width:100%; height: 70%; margin:auto;">
+                <p class="desc"><b>Lapcare Laptop Battery for Dell Inspiron N5010, N5110, N5050, N4010,N4110 6 Cell (Black).</p>
+                <p class="amt">&#8377;1,199.00</b><del>&#8377;2,150.00</del> </p>
+                <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+        </a>
+    </div>
+    <div class="c">
+        <a href="#" style="text-decoration: none;">
+            <div class="homecontent">
+                <img class="lazyloaded" src="images/products/laptopspares/battries/dell2.jpg" style="width:100%; height: 70%; margin:auto;">
+                <p class="desc"><b>Dell Original 91T8W-XCMRD Laptop Battery 14.6V 40WH Fit with Inspiron 15 3000 Series </p>
+                <p class="amt">&#8377;2,459.00</b><del>&#8377;4,999.00</del> </p>
+                <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+        </a>
+    </div>
+    <div class="c">
+        <a href="#" style="text-decoration: none;">
+            <div class="homecontent">
+                <img class="lazyloaded" src="images/products/laptopspares/battries/wister.jpg" style="width:100%; height: 70%; margin:auto;">
+                <p class="desc"><b>WISTAR 919700-850 JC03 JC04 Laptop Battery for Hp 15-BS 15-BW 17-BS Notebook PC Series fits 17-bs067cl</p>
+                <p class="amt">&#8377;1,999.00 </b><del>&#8377;3,999.00</del> </p>
+                <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+        </a>
+    </div>
+    <div class="c">
+        <a href="#" style="text-decoration: none;">
+            <div class="homecontent">
+                <img class="lazyloaded" src="images/products/laptopspares/battries/wister2.jpg" style="width:100%; height: 70%; margin:auto;"><br>
+                <p class="desc" ><b>WISTAR C21N1347 X555L Laptop Battery for Asus X555LA X555 X555LD X555LN A555L K555L</p>
+                <p class="amt">&#8377;1,829.00</b> <del>&#8377;2,100.00</del> </p>
+                <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+        </a>
+    </div>
+        
+
+    
+
+    <div style="display: flex;">
+        <h2 style="padding: 20px; padding-top: 50px;">Keyboards</h2>
+    </div>
+    <div class="c">
+        <a href="#" style="text-decoration: none;">
+            <div class="homecontent">
+                <img class="lazyloaded" src="images/products/laptopspares/keyboard/zeb.jpg" style="width:100%; height: 70%; margin:auto;">
+                <p class="desc" ><b>ZEBRONICS K36 Wired USB Keyboard with 106 Keys, Slim Design, Smartphone Holder, Retractable Stand, 1.2m Cable Length.</p>
+                <p class="amt">&#8377;398.00</b> <del>&#8377;599.00</del> </p>
+                <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+        </a>
+    </div>
+    <div class="c">
+        <a href="#" style="text-decoration: none;">
+            <div class="homecontent">
+                <img class="lazyloaded" src="images/products/laptopspares/keyboard/ant.jpg" style="width:100%; height: 70%; margin:auto;">
+                <p class="desc"><b>Ant Esports MK1400 Pro Backlit Membrane Wired Gaming Keyboard with Mixed Colour Lighting. </p>
+                <p class="amt">&#8377;599.00</b> <del>&#8377;1,150.00</del> </p>
+                <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+        </a>
+    </div>
+    <div class="c">
+        <a href="#" style="text-decoration: none;">
+            <div class="homecontent">
+                <img class="lazyloaded" src="images/products/laptopspares/keyboard/raefer.jpg" style="width:100%; height: 70%; margin:auto;">
+                <p class="desc"><b>RAEGR RapidGear X30 Wired Rainbow Backlight Keyboard and 1200 DPI Mouse Set, LED Backlit, Floating Keycaps.</p>
+                <p class="amt">&#8377;999.00</b><del>&#8377;1,150.00</del> </p>
+                <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+        </a>
+    </div>
+    <div class="c">
+        <a href="#" style="text-decoration: none;">
+            <div class="homecontent">
+                <img class="lazyloaded" src="images/products/laptopspares/keyboard/zeb2.jpg" style="width:100%; height: 70%; margin:auto;">
+                <p class="desc"><b>ZEBRONICS K24 USB Keyboard with Long Life 8 Million Keystrokes, Silent & Comfortable Use, Slim Design.</p>
+                <p class="amt">&#8377;239.00</b><del>&#8377;999.00</del> </p>
+                <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+        </a>
+    </div>
+    <div class="c">
+        <a href="#" style="text-decoration: none;">
+            <div class="homecontent">
+                <img class="lazyloaded" src="images/products/laptopspares/keyboard/dell.jpg" style="width:100%; height: 70%; margin:auto;">
+                <p class="desc"><b>Dell KB216 Multimedia USB Wired Keyboard with Plunger Keys and is Spill-Resistant</p>
+                <p class="amt">&#8377;599.00 </b><del>&#8377;1,999.00</del> </p>
+                <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+        </a>
+    </div>
+    <div class="c">
+        <a href="#" style="text-decoration: none;">
+            <div class="homecontent">
+                <img class="lazyloaded" src="images/products/laptopspares/keyboard/hp.jpg" style="width:100%; height: 70%; margin:auto;"><br>
+                <p class="desc" ><b>HP K160 Wireless Keyboard/Quick Comfy accurate/12 Fn Shortcut Keys/Plug and Play USB/ 3 Years Warranty</p>
+                <p class="amt">&#8377;729.00</b> <del>&#8377;1,100.00</del> </p>
+                <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+        </a>
+    </div>
+    <div class="c">
+        <a href="#" style="text-decoration: none;">
+            <div class="homecontent">
+                <img class="lazyloaded" src="images/products/laptopspares/keyboard/lapcare.jpg" style="width:100%; height: 70%; margin:auto;"><br>
+                <p class="desc" ><b>Lapcare WL-102 Wireless Keyboard and High Precision Mouse, 2.4GHz Wireless with Nano Receiver</p>
+                <p class="amt">&#8377;629.00</b> <del>&#8377;1,199.00</del> </p>
+                <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+        </a>
+    </div>
+    <div class="c">
+        <a href="#" style="text-decoration: none;">
+            <div class="homecontent">
+                <img class="lazyloaded" src="images/products/laptopspares/keyboard/ant2.jpg" style="width:100%; height: 70%; margin:auto;"><br>
+                <p class="desc" ><b>Ant Esports MK 1700 Wired Membrane Gaming Keyboard –with Backlit RGB LED, USB-A Connection</p>
+                <p class="amt">&#8377;529.00</b> <del>&#8377;1,170.00</del> </p>
+                <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+        </a>
+    </div>
+
+       
+
+        <div style="display: flex;">
+            <h2 style="padding: 20px; ">Motherboard</h2>
+        </div>
+        <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/peripherals/motherboard/msi.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc" ><b>MSI B450M Pro-Vdh Max Gaming Fullat Motherboard Ddr4.</p>
+                    <p class="amt">&#8377;5,389.00</b> <del>&#8377;12,599.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+        </div>
+        <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/peripherals/motherboard/msi2.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc"><b>MSI MPG B650 Edge WiFi AMD AM5 ATX Motherboard, 4X DDR5~128GB. </p>
+                    <p class="amt">&#8377;23,199.00</b> <del>&#8377;35,750.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+        </div>
+        <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/peripherals/motherboard/giga.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc"><b>GIGABYTE B450M DS3H V2 (AMD Ryzen AM4/Micro ATX/M.2/HMDI/DVI/USB 3.1/DDR4/Motherboard).</p>
+                    <p class="amt">&#8377;5,599.00</b><del>&#8377;9,550.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+        </div>
+        <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/peripherals/motherboard/ant.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc"><b>Ant Value H61MAD3-N mATX Gaming Motherboard LGA1155 Support Intel 2nd and 3rd Generation i3/i5/i7 DDR3</p>
+                    <p class="amt">&#8377;1,599.00</b><del>&#8377;3,999.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+        </div>
+        <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/peripherals/motherboard/asus.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc"><b>ASUS Prime Z790-P WiFi Lga 1700(Intel 13Th &12Th Gen) ATX Motherboard</p>
+                    <p class="amt">&#8377;28,999.00 </b><del>&#8377;40,999.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+        </div>
+        <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/peripherals/motherboard/asus2.jpg" style="width:100%; height: 70%; margin:auto;"><br>
+                    <p class="desc" ><b>ASUS ROG Strix Z790-F Gaming WiFi LGA 1700 ATX Motherboard with 16 + 1 Power Stages, DDR5</p>
+                    <p class="amt">&#8377;45,129.00</b> <del>&#8377;52,100.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+        </div><br>
+
+
+            <div style="display: flex;">
+                <h2 style="padding: 20px; ">Mouse</h2>
+            </div>
+            <div class="c">
+                <a href="#" style="text-decoration: none;">
+                    <div class="homecontent">
+                        <img class="lazyloaded" src="images/products/laptopspares/mouse/zeb.jpg" style="width:100%; height: 70%; margin:auto;">
+                        <p class="desc" ><b>ZEBRONICS PHERO Wired Gaming Mouse with up to 1600 DPI, Rainbow LED Lights.</p>
+                        <p class="amt">&#8377;189.00</b> <del>&#8377;899.00</del> </p>
+                        <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                    </div>
+                </a>
+            </div>
+            <div class="c">
+                <a href="#" style="text-decoration: none;">
+                    <div class="homecontent">
+                        <img class="lazyloaded" src="images/products/laptopspares/mouse/vibton.jpg" style="width:100%; height: 70%; margin:auto;">
+                        <p class="desc"><b>VIBOTON Gaming Mouse | Wired USB 2.0, Mouse Gaming | RGB Mouse | Optical Mice, 3200 DPI LED Backlight 6 Button. </p>
+                        <p class="amt">&#8377;999.00</b> <del>&#8377;1,750.00</del> </p>
+                        <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                    </div>
+                </a>
+            </div>
+            <div class="c">
+                <a href="#" style="text-decoration: none;">
+                    <div class="homecontent">
+                        <img class="lazyloaded" src="images/products/laptopspares/mouse/zeb2.jpg" style="width:100%; height: 70%; margin:auto;">
+                        <p class="desc"><b>ZEBRONICS Zeb-Comfort Wired USB Mouse, 3-Button, 1000 DPI Optical Sensor.</p>
+                        <p class="amt">&#8377;99.00</b><del>&#8377;550.00</del> </p>
+                        <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                    </div>
+                </a>
+            </div>
+            <div class="c">
+                <a href="#" style="text-decoration: none;">
+                    <div class="homecontent">
+                        <img class="lazyloaded" src="images/products/laptopspares/mouse/rpm.jpg "style="width:100%; height: 70%; margin:auto;">
+                        <p class="desc"><b>RPM Euro Games Wireless Gaming Mouse | Rechargeable 500 mAh Battery | DPI Upto 3200 | 6 Color RGB Lights.</p>
+                        <p class="amt">&#8377;599.00</b><del>&#8377;999.00</del> </p>
+                        <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                    </div>
+                </a>
+            </div>
+            <div class="c">
+                <a href="#" style="text-decoration: none;">
+                    <div class="homecontent">
+                        <img class="lazyloaded" src="images/products/laptopspares/mouse/hp.jpg" style="width:100%; height: 70%; margin:auto;">
+                        <p class="desc"><b>HP M120 Wireless Mouse, USB-A Nano Dongle, 2.4 Ghz Wireless Connection, 6 Buttons, Up to 1600 Dpi, Optical Sensor</p>
+                        <p class="amt">&#8377;699.00 </b><del>&#8377;1,999.00</del> </p>
+                        <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                    </div>
+                </a>
+            </div>
+            <div class="c">
+                <a href="#" style="text-decoration: none;">
+                    <div class="homecontent">
+                        <img class="lazyloaded" src="images/products/laptopspares/mouse/port.jpg" style="width:100%; height: 70%; margin:auto;"><br>
+                        <p class="desc" ><b>Portronics Toad One Bluetooth Mouse with 2.4 GHz & BT 5.3 Dual Wireless, 6 Buttons, Rechargeable, RGB Lights.</p>
+                        <p class="amt">&#8377;629.00</b> <del>&#8377;1,100.00</del> </p>
+                        <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                    </div>
+                </a>
+            </div>
+            <div class="c">
+                <a href="#" style="text-decoration: none;">
+                    <div class="homecontent">
+                        <img class="lazyloaded" src="images/products/laptopspares/mouse/dell.jpg" style="width:100%; height: 70%; margin:auto;">
+                        <p class="desc"><b>Dell MS116 Wired Optical Mouse, 1000DPI, LED Tracking, Scrolling Wheel, Plug and Play</p>
+                        <p class="amt">&#8377;299.00 </b><del>&#8377;999.00</del> </p>
+                        <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                    </div>
+                </a>
+            </div>
+            <div class="c">
+                <a href="#" style="text-decoration: none;">
+                    <div class="homecontent">
+                        <img class="lazyloaded" src="images/products/laptopspares/mouse/cimetch.jpg" style="width:100%; height: 70%; margin:auto;"><br>
+                        <p class="desc" ><b>cimetech Wireless Bluetooth Rechargeable Mouse, Portable Lightweight Soundless 2.4G Ergonomic Mouse with LED Lights</p>
+                        <p class="amt">&#8377;1,129.00</b> <del>&#8377;3,100.00</del> </p>
+                        <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                    </div>
+                </a></div><br>
+
+
+                <div style="display: flex;">
+                    <h2 style="padding: 20px; ">Processors</h2>
+                </div>
+                <div class="c">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="homecontent">
+                            <img class="lazyloaded" src="images/products/peripherals/processors/ryzen.jpg" style="width:100%; height: 70%; margin:auto;">
+                            <p class="desc" ><b>AMD Ryzen™ 5 5600G Desktop Processor (6-core/12-thread, 19MB Cache, up to 4.4 GHz max Boost).</p>
+                            <p class="amt">&#8377;11,363.00</b> <del>&#8377;22,599.00</del> </p>
+                            <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="c">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="homecontent">
+                            <img class="lazyloaded" src="images/products/peripherals/processors/ryzen2.jpg" style="width:100%; height: 70%; margin:auto;">
+                            <p class="desc"><b>AMD Ryzen 5 3600 Desktop Processor 6 Cores up to 4.2 GHz 35MB Cache Socket AM4. </p>
+                            <p class="amt">&#8377;8,199.00</b> <del>&#8377;10,750.00</del> </p>
+                            <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="c">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="homecontent">
+                            <img class="lazyloaded" src="images/products/peripherals/processors/intel.jpg" style="width:100%; height: 70%; margin:auto;">
+                            <p class="desc"><b>Intel® Core™ i9-14900K New Gaming Desktop Processor 24 cores (8 P-cores + 16 E-cores) with Integrated Graphics.</p>
+                            <p class="amt">&#8377;64,599.00</b><del>&#8377;72,550.00</del> </p>
+                            <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="c">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="homecontent">
+                            <img class="lazyloaded" src="images/products/peripherals/processors/intel2.jpg" style="width:100%; height: 70%; margin:auto;">
+                            <p class="desc"><b>Intel® Core i5-10400 Processor (12M Cache, up to 4.30 GHz) BGA 437 Socket</p>
+                            <p class="amt">&#8377;11,599.00</b><del>&#8377;16,999.00</del> </p>
+                            <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                        </div>
+                    </a></div>
+                    <div class="c">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="homecontent">
+                            <img class="lazyloaded" src="images/products/peripherals/processors/intel3.jpg" style="width:100%; height: 70%; margin:auto;">
+                            <p class="desc"><b>CORE I5 4590,4570 (4TH Generation) Processor 3.3 GHz Upto 3.7 GHz LGA 1150 Socket 4 Cores 4 Threads.</p>
+                            <p class="amt">&#8377;2,499.00 </b><del>&#8377;7,999.00</del> </p>
+                            <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="c">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="homecontent">
+                            <img class="lazyloaded" src="images/products/peripherals/processors/intel4.jpg" style="width:100%; height: 70%; margin:auto;"><br>
+                            <p class="desc" ><b>Intel Core i3 12100F 12th Gen Generation Desktop PC Processor 4 CPU with 12MB Cache</p>
+                            <p class="amt">&#8377;7,129.00</b> <del>&#8377;12,100.00</del> </p>
+                            <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                        </div>
+                    </a></div><br>
+                    <div class="bottom">
+               
+                        <div class="info">
+                            <h1><b>SUPPORT</b></h1><br>
+                            <p><a class="abc" href="contactus.html">Contact Us</a></p>
+                        </div>
+                
+                        <div class="info">
+                            <h1><b>INFORMATION</b></h1><br>
+                            <p><a class="abc" href="footer/aboutus.html">About Us</a></p>
+                            <p><a  class="abc" href="footer/refurbish.html">Refurbishing Information</a></p>
+                            <p><a class="abc" href="footer/installation.html">Installation</a></p>
+                        </div>
+                
+                        <div class="info">
+                            <h1>POLICIES</h1><br>
+                            <p> <a class="abc" href="footer/privacypolicy.html">Privacy & Policy</a></p>
+                            <p><a class="abc" href="footer/termscondition.html">Terms & Condition</a></p>
+                            <p><a class="abc" href="footer/cancelrefund.html">Cancel & Refund Policy</a></p>
+                            <p><a class="abc" href="footer/shipping.html">Shipping & Delivery Policy</a></p>
+                        </div>
+                
+                        <div class="info">
+                            <h1>FAQ'S</h1><br>
+                     
+                            <p> <a class="abc" href="footer/warrenty.html">Warrenty Upgrade</a></p>
+                            <p><a class="abc" href="footer/installation.html">Installation & Configuration</a></p>
+                            <p><a class="abc" href="footer/exchange.html">Exchange & Buy Pack</a></p>
+                        </div>    
+                
+                    </div>
+                
+                    <div class="bot2">
+                        <img src="footer/bottom.png" style="height: 80px; width: 70%;" >
+                    </div>
+                
+                    <div class="bot3">
+                        <b><a href="footer/termscondition.html">Terms & Condition</a></b> 
+                    </div>
+                
+                    <div class="bot4">
+                        <img src="footer/payment_icon.png" style="height: 80px; width: 70%;" >
+                    </div>
+    </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

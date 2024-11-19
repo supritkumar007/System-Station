@@ -1,0 +1,186 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>Leneno Monitor</title>
+<link rel="stylesheet" href="productmain.css">
+<link href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
+<link rel='stylesheet' href='https://sachinchoolur.github.io/lightslider/dist/css/lightslider.css'>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body oncontextmenu='return false' class='snippet-body'>
+<div class="container-fluid mt-2 mb-3">
+    <div class="row no-gutters">
+        <div class="col-md-5 pr-2">
+            <div class="card">
+                <div class="demo">
+                    <ul id="lightSlider">
+                        <!-- <h2 class="w3-center">Manual Slideshow</h2> -->
+                       
+
+                        <div class="w3-content w3-display-container">
+                          <img class="mySlides" src="images/products/latest/a3.jpg" style="height: 600px; width:100%">
+                          <img class="mySlides" src="images/products/latest/a3.2.jpg" style="height: 600px; width:100%">
+                          <img class="mySlides" src="images/products/latest/a3.3.jpg" style="height: 600px; width:100%">
+                          <img class="mySlides" src="images/products/latest/a3.4.jpg" style="height: 600px; width:100%">
+                          <img class="mySlides" src="images/products/latest/a3.5.jpg" style="height: 600px; width:100%">
+                        
+                          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                        </div>
+                        
+                        <script>
+                        var slideIndex = 1;
+                        showDivs(slideIndex);
+                        
+                        function plusDivs(n) {
+                          showDivs(slideIndex += n);
+                        }
+                        
+                        function showDivs(n) {
+                          var i;
+                          var x = document.getElementsByClassName("mySlides");
+                          if (n > x.length) {slideIndex = 1}
+                          if (n < 1) {slideIndex = x.length}
+                          for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";  
+                          }
+                          x[slideIndex-1].style.display = "block";  
+                        }
+                        </script> 
+                </div>
+            </div>
+            
+        </div>
+        <div class="col-md-7">
+            <div class="card">
+                <div class="d-flex flex-row align-items-center">
+                    <!-- <div class="p-ratings"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div> <span class="ml-1">5.0</span> -->
+                </div>
+                <div class="about"> <span class="font-weight-bold">Lenovo ThinkVision S24e-20 23.8"FHD Monitor</span><br>
+                    <h4 class="font-weight-bold">₹8,373 <del style="font-size: 15px; color: rgb(88, 87, 87);">₹10,799</del> </h4> 
+                </div>
+                <div class="buttons" style="display: flex; gap: 10px;">
+                    <form action="cart1.jsp" method="post">
+                        <input type="hidden" name="prodId" value="2789" style="border:none;" readonly>
+                        <button class="btn btn-outline-warning btn-long cart">Add to Cart</button> 
+                    </form>
+
+                    <form action="" method="">
+                        <input type="hidden" name="prodId" value="2789" style="border:none;" readonly>
+                        <button class="btn btn-warning btn-long buy">Buy it Now</button>
+                    </form>
+                    
+
+                    <form action="wishlist1.jsp" method="post">
+                        <input type="hidden" name="prodId" value="2789" style="border:none;" readonly>
+                        <button class="btn btn-light wishlist"> <i class="fa fa-heart"></i> Wishlist</button> 
+                    </form>
+                </div>
+                <hr>
+                <div class="product-description">
+                    <div class="mt-2"> <span class="font-weight-bold">Product Description</span>
+                        <p> The ThinkVision S24e-20 is an excellent performer that delivers core functionality with a sleek new form factor. Its 1920 x 1080 FHD resolution VA panel rotates up to angles as extreme as 178°. The compact screen head is twice as slim as its previous generation and sits within a compact 3-side NearEdgeless frame. The stand’s built-in cable management system keeps wires out of sight and out of mind. This is a good thing, because with HDMI, VGA and Audio Out ports, the S24e-20 can connect to a whole range of mission-critical devices. And because your staff are your most precious asset, S24e-20 has TÜV Rheinland Eye Comfort Certified technology to protect them from eye fatigue.</p>
+                        <div class="bullets">
+                            <div class="d-flex align-items-center"> <span class="dot"></span> <span class="bullet-text">Brand: Lenevo</span> </div>
+                            <div class="d-flex align-items-center"> <span class="dot"></span> <span class="bullet-text">Series: ThinkVision</span> </div>
+                            <div class="d-flex align-items-center"> <span class="dot"></span> <span class="bullet-text">Model: S24e-20</span> </div>
+                            <div class="d-flex align-items-center"> <span class="dot"></span> <span class="bullet-text">Type: Monitor</span> </div>
+                            <div class="d-flex align-items-center"> <span class="dot"></span> <span class="bullet-text">Connectivity: 1 x VGA | 1 x HDMI 1.4 | 1 x Audio Out (3.5mm)</span> </div>
+                            <div class="d-flex align-items-center"> <span class="dot"></span> <span class="bullet-text">Brightness: 250 cd/㎡</span> </div>
+                            <div class="d-flex align-items-center"> <span class="dot"></span> <span class="bullet-text">Power Supply: 100 - 240 VAC, 50 - 60 Hz</span> </div>
+                            <div class="d-flex align-items-center"> <span class="dot"></span> <span class="bullet-text">Power Consumption: 0.5W</span> </div>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+            <span class="heading">User Rating</span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <p>4.1 average based on 54 reviews.</p>
+            <hr style="border:3px solid #f1f1f1">
+
+            <div style="padding: 15px; margin-left: 10px;" class="row">
+                <div class="side">
+                    <div>5 star</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                        <div class="bar-5"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div>20</div>
+                </div>
+                <div class="side">
+                    <div>4 star</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                        <div class="bar-4"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div>10</div>
+                </div>
+                <div class="side">
+                    <div>3 star</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                        <div class="bar-3"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div>7</div>
+                </div>
+                <div class="side">
+                    <div>2 star</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                        <div class="bar-2"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div>3</div>
+                </div>
+                <div class="side">
+                    <div>1 star</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                        <div class="bar-1"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div>10</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+<script src='https://sachinchoolur.github.io/lightslider/dist/js/lightslider.js'></script>
+<script>
+</script>
+<script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js'></script>
+<script type='text/javascript' src=''></script>
+<script type='text/javascript' src=''></script>
+<script type='text/Javascript'></script>

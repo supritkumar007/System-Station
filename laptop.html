@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" href="web.css">
+   <title>Laptops</title>
+   <link rel="icon" type="image/x-icon" href="images/logo2.png">
+
+<style>
+    
+</style>
+</head>
+<body>
+    <div class="main"><BR>
+        <marquee scrollamount="18"><B>EXTRA 5% DISCOUNT FOR ORDERS ABOVE &#8377;20,999/-</B></marquee>
+    </div>
+    <div class="smain">
+        <div class="logo">
+            <a href="laptop.html">
+                <img src="images/logo2.png" style="height: 80px; width: 120px;" onclick="op">
+            </a>
+        </div>
+        <div class="cont">
+            <ul type="none">
+            <b>
+                <li style="color:white;font-size:30px;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;cursor:pointer">System Station</li>
+                <li class="dropdown"><a href="laptopspares.html" id="head">Home</a></li>
+                
+                <li class="dropdown"><a href="laptop.html" id="head">Laptops</a></li>
+
+                <li class="dropdown"><a href="computer.html" id="head">Computers</a>
+                  
+                </li>
+                <li class="dropdown"><a href="peripherals.html" id="head">Peripherals</a>
+                    
+                </li>
+                <li class="dropdown"><a href="laptopspares.html" id="head">Laptop Spares</a>
+                    
+                </li>
+               
+                <li class="dropdown"><a href="others.html" id="head">Others</a>
+
+                <li class="dropdown"><a href="" id="head">|</a>
+                    
+                </li>
+               </b>
+            </ul>
+        </div>
+        <div class="order">
+            <a href="#">
+                <input type="hidden" name="un" value="<%=username%>" style="border:none;" readonly>
+                <abbr title="Order">
+                    <img src="images/orderlogo1.png" style="height: 25px; margin-top:32px;">
+            </a>
+        </div>
+        <div class="wish">
+            <a href="wishlist.jsp">
+                <input type="hidden" name="un" value="<%=username%>" style="border:none;" readonly>
+                <abbr title="WishList">
+                    <img src="images/wish1.png" style="height: 25px;">
+            </a>
+        </div>
+        <div class="cart">
+            <form action="cart.jsp" method="post">
+                <input type="hidden" name="un" value="<%=username%>" style="border:none;" readonly>
+                <abbr title="Cart">
+                    <button style="background-color:transparent; border:none; cursor:pointer;">
+                        <img src="images/cart1.png" style="height: 25px;">
+                    </button>
+            </form>
+        </div>
+        <div class="profile"><br>
+            <a href="ViewProfile.jsp?u=<%=rs.getString(2)%>"><abbr title="Profile"><img src="images/profile1.png" style="height: 28px;"></a>
+        </div>
+        <div class="login"><br>
+            <a href="logout.html"><abbr title="Logout"> <img src="images/logout.png" style="height: 25px;"></abbr></a>
+        </div>        
+    </div>
+    <div class="tmain">
+        <b>Discover Digital Delights</b>
+    </div>
+
+    <div class="card3" >
+        <div style="display: flex;">
+            <!-- <h2 style="padding: 20px; "></h2> -->
+        </div>
+        <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/best selling/acer.jpg" style="width:90%; height: 70%; margin:auto;">
+                    <p class="desc" ><b>Acer Aspire Lite 12th Gen Intel Core i5-1235U Thin and Light Laptop</p>
+                    <p class="amt">&#8377;47,990.00</b> <del>&#8377;52,520.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+        </div>
+
+        <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/laptops/hp1.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc"><b>HP Laptop 15s, 12th Gen Intel Core i3, 15.6-inch (39.6 cm), 8GB DDR4, 512GB SSD</p>
+                    <p class="amt">&#8377;36,990.00</b> <del>&#8377;51,599.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+        </div>
+        <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/laptops/hp2.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc"><b>HP Spectre x360, Intel Core Ultra 7 155H, Built-in AI, 14-inch 1TB SSD, Intel Arc Graphics</p>
+                    <p class="amt">&#8377;1,21,490.00</b><del>&#8377;1,82,999.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+        </div>
+        <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/laptops/hp3.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc"><b>HP Laptop 15s, 12th Gen Intel Core i5-1235U, FHD, 16GB DDR4, 512GB SSD</p>
+                    <p class="amt">&#8377;51,990.00</b><del>&#8377;72,999.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+        </div>
+        <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/laptops/hp4.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc"><b>HP Laptop 15s, AMD Ryzen 5 5500U, FHD, 8GB DDR4, 512GB SSD, AMD Radeon Graphics</p>
+                    <p class="amt">&#8377;37,990.00 </b><del>&#8377;45,999.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+        </div>
+        <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/laptops/dell1.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc" ><b>DELL Latitude 5490 Core i5 8th Gen Laptop, 16 GB RAM, 512GB SSD, Intel HD Graphics</p>
+                    <p class="amt">&#8377;25,699.00</b> <del>&#8377;33,299.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+        </div>
+        <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/laptops/len1.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc" ><b>Lenovo IdeaPad Slim 3 Intel Core i3 12th Gen 15.6" (39.62cm) FHD Thin & Light Laptop</p>
+                    <p class="amt">&#8377;37,995.00</b> <del>&#8377;45,889.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+        </div>
+        <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/laptops/len2.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc" ><b>Lenovo IdeaPad Slim 5 Intel Core i5 12450H 14" (35.5cm) WUXGA+ IPS Laptop</p>
+                    <p class="amt">&#8377;59,148.00</b> <del>&#8377;72,219.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+        </div>
+        <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/laptops/len3.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc" ><b>Lenovo Yoga Slim 6 Intel Evo Core i5 1240P 14"(35.5cm) 2.2K 300Nit Laptop | 1Yr Warranty</p>
+                    <p class="amt">&#8377;65,004.00</b> <del>&#8377;78,220.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+        </div>
+        <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/best selling/hp.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc" ><b>Hp 15s Ryzen 5 Laptop 16GB RAM/512GB SSD 15.6-inches(39.6 cm) FHD</p>
+                    <p class="amt">&#8377;41,990.00</b> <del>&#8377;54,23.900</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+        </div>
+        <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/laptops/mac1.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc" ><b>Apple 2023 MacBook Pro (14-inch, M3 chip with 8 core CPU and 10 core GPU, 8GB Unified Memory, 1TB)</p>
+                    <p class="amt">&#8377;1,89,885.00</b> <del>&#8377;2,13,230.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+        </div>
+            <div class="bottom">
+               
+                <div class="info">
+                    <h1><b>SUPPORT</b></h1><br>
+                    <p><a class="abc" href="contactus.html">Contact Us</a></p>
+                </div>
+        
+                <div class="info">
+                    <h1><b>INFORMATION</b></h1><br>
+                    <p><a class="abc" href="footer/aboutus.html">About Us</a></p>
+                    <p><a  class="abc" href="footer/refurbish.html">Refurbishing Information</a></p>
+                    <p><a class="abc" href="footer/installation.html">Installation</a></p>
+                </div>
+        
+                <div class="info">
+                    <h1>POLICIES</h1><br>
+                    <p> <a class="abc" href="footer/privacypolicy.html">Privacy & Policy</a></p>
+                    <p><a class="abc" href="footer/termscondition.html">Terms & Condition</a></p>
+                    <p><a class="abc" href="footer/cancelrefund.html">Cancel & Refund Policy</a></p>
+                    <p><a class="abc" href="footer/shipping.html">Shipping & Delivery Policy</a></p>
+                </div>
+        
+                <div class="info">
+                    <h1>FAQ'S</h1><br>
+             
+                    <p> <a class="abc" href="footer/warrenty.html">Warrenty Upgrade</a></p>
+                    <p><a class="abc" href="footer/installation.html">Installation & Configuration</a></p>
+                    <p><a class="abc" href="footer/exchange.html">Exchange & Buy Pack</a></p>
+                </div>    
+        
+            </div>
+        
+            <div class="bot2">
+                <img src="footer/bottom.png" style="height: 80px; width: 70%;" >
+            </div>
+        
+            <div class="bot3">
+                <b><a href="footer/termscondition.html">Terms & Condition</a></b> 
+            </div>
+        
+            <div class="bot4">
+                <img src="footer/payment_icon.png" style="height: 80px; width: 70%;" >
+            </div>
+            
+    </div>
+
+    
+</body>
+</html>

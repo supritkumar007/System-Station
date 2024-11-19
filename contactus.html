@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image/x-icon" href="images/logo2.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+*{
+   font-family:"Poppins", sans-serif;
+}
+body{
+    padding-left: 20px;
+    background-color: whitesmoke;
+}
+.wrapper{
+    margin-top: 25px;
+    width:1400px;
+    height: 600px;
+   margin-left:20px;
+   display: flex;
+   border: 2px solid black;
+   padding: 25px;
+}
+.btn{
+    width: 100px;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    border:2px solid rgba(81, 4, 247, 0.2);
+    font-weight: 600;
+}
+.btn:hover{
+    background-color: rgb(104, 104, 246);
+}
+.location{
+   padding-left: 450px;
+}
+
+.wrapper .back button{
+    background-color: rgb(65, 50, 234);
+}
+.wrapper .back button:hover{
+    background-color: rgb(144, 138, 223);
+}
+    </style>
+ 
+
+</head>
+<body>
+   
+        
+            
+            <div class="wrapper">
+                <form action="contactus.jsp" method="post">
+                
+                        <h1>Contact Us</h1>
+                        <pre>Contact us about anything related to our company or services.
+    We'll do our best to get back to you as soon as possible.</pre><br>
+                    
+                        <div class="input-box">
+                            <b>Your Name:*</b><br><input type="text" name="name" style= "background-color:whitesmoke;height: 30px; width:500px; border: none; border-bottom: 2px  solid black; outline: none;" required>
+                        </div><br>
+    
+                        <div class="input-box">
+                            <b>Phone Number:*</b><br><input type="number" name="phno" style="background-color:whitesmoke; height: 30px; width:500px;  border: none; border-bottom: 2px  solid black; outline: none;" required>
+                        </div><br>
+    
+                        <div class="input-box">
+                            <b>E-Mail:*</b><br><input type="email" name="email" style= "background-color:whitesmoke;height: 30px; width:500px;  border: none; border-bottom: 2px  solid black; outline: none;" required>
+                        </div><br>
+                    
+                        <div class="input-box">
+                            <b>Your Question/Feedback:*</b><br> <textarea name="question" style=" margin-top:10px;height:70px; width:500px" required></textarea>
+                        </div><br>
+    
+                        <!-- Add date input field with id -->
+                        <div class="input-box">
+                            <b>Date:</b> <input type="text" id="date" name="date" readonly>
+                        </div><br>
+                        <script>
+                            // JavaScript to fill date input with current date
+                            document.getElementById("date").value = new Date().toISOString().slice(0, 10);
+                        </script>
+                       
+    
+                        <button type="submit" class="btn">Send</button>
+                   
+                </form>
+        
+    
+            <div class="location">
+                <p style="width: 500px; margin-top: 50px;"><b>System Station Pvt Ltd</b></p>
+                <p>System Station, #106, IT Park Hosur,</p>
+                <p >Hubli 580024</p>
+                <p >Karnataka, India</p>
+                <i class='bx bxs-envelope'></i>systemstation06@gmail.com <br><br>
+                +91 76248 04287</p>
+                <div class="back" ><a href=""><button style="width: 300px; height:30px;font-size:15px; color: aliceblue;">Your Feedback Our Improvement</button></a></div>
+            </div>
+            
+        </div>
+
+        
+    
+</body>
+</html>

@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" href="web.css">
+   <title>Peripherals</title>
+   <link rel="icon" type="image/x-icon" href="images/logo2.png">
+
+<style>
+    
+</style>
+</head>
+<body>
+    <div class="main"><BR>
+        <marquee scrollamount="18"><B>EXTRA 5% DISCOUNT FOR ORDERS ABOVE &#8377;20,999/-</B></marquee>
+    </div>
+    <div class="smain">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo2.png" style="height: 80px; width: 120px;" onclick="op">
+            </a>
+        </div>
+        <div class="cont">
+            <ul type="none">
+            <b>
+                <li style="color:white;font-size:30px;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;cursor:pointer">System Station</li>
+                <li class="dropdown"><a href="peripherals.html" id="head">Home</a></li>
+                
+                <li class="dropdown"><a href="laptop.html" id="head">Laptops</a></li>
+
+                <li class="dropdown"><a href="computer.html" id="head">Computers</a>
+                  
+                </li>
+                <li class="dropdown"><a href="peripherals.html" id="head">Peripherals</a>
+                    
+                </li>
+                <li class="dropdown"><a href="laptopspares.html" id="head">Laptop Spares</a>
+                    
+                </li>
+               
+                <li class="dropdown"><a href="others.html" id="head">Others</a>
+
+                <li class="dropdown"><a href="" id="head">|</a>
+                    
+                </li>
+               </b>
+            </ul>
+        </div>
+        <div class="order">
+            <a href="#">
+                <input type="hidden" name="un" value="<%=username%>" style="border:none;" readonly>
+                <abbr title="Order">
+                    <img src="images/orderlogo1.png" style="height: 25px; margin-top:32px;">
+            </a>
+        </div>
+        <div class="wish">
+            <a href="wishlist.jsp">
+                <input type="hidden" name="un" value="<%=username%>" style="border:none;" readonly>
+                <abbr title="WishList">
+                    <img src="images/wish1.png" style="height: 25px;">
+            </a>
+        </div>
+        <div class="cart">
+            <form action="cart.jsp" method="post">
+                <input type="hidden" name="un" value="<%=username%>" style="border:none;" readonly>
+                <abbr title="Cart">
+                    <button style="background-color:transparent; border:none; cursor:pointer;">
+                        <img src="images/cart1.png" style="height: 25px;">
+                    </button>
+            </form>
+        </div>
+        <div class="profile"><br>
+            <a href="ViewProfile.jsp?u=<%=rs.getString(2)%>"><abbr title="Profile"><img src="images/profile1.png" style="height: 28px;"></a>
+        </div>
+        <div class="login"><br>
+            <a href="logout.html"><abbr title="Logout"> <img src="images/logout.png" style="height: 25px;"></abbr></a>
+        </div>        
+    </div>
+    <div class="tmain">
+        <b>Discover Digital Delights</b>
+    </div>
+
+    <div class="card2" >
+        <div style="display: flex;">
+            <h2 style="padding: 20px; ">Graphic Cards</h2>
+        </div>
+        <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/peripherals/graphic cards/gigabyte gc.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc" ><b>GIGABYTE Nvidia GeForce ® GTX 1650 D6, OC 4GD Graphics Card with Integrated 4GB GDDR6 Memory.</p>
+                    <p class="amt">&#8377;11,363.00</b> <del>&#8377;22,599.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+        </div>
+        <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/peripherals/graphic cards/zeb gc.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc"><b>ZEBRONICS- GT730 4GD3, Powered by NVIDIA, GDDR3 Graphics Memory with 64 bit Memory Bus. </p>
+                    <p class="amt">&#8377;3,199.00</b> <del>&#8377;5,750.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+        </div>
+        <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/peripherals/graphic cards/zeb gc2.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc"><b>ZEBRONICS Gt610 2Gd3 with Pcie 2.0,Multiconnectivity Hdmi Dvi Vga,High Efficiency,Heatsink with Fan.</p>
+                    <p class="amt">&#8377;1,599.00</b><del>&#8377;2,550.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+        </div>
+        <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/peripherals/graphic cards/geo gc.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc"><b>GEONIX Geforce GT-610LP 2GB ddr3 Memory Graphics Card | VGA/HDMI/DVI Video Output | 3 Years Warranty</p>
+                    <p class="amt">&#8377;1,599.00</b><del>&#8377;3,999.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+        </div>
+        <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/peripherals/graphic cards/asus gc.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc"><b>ASUS Republic of Gamers Strix Radeon RX 560 16CU 4GB Gaming GDDR5 HDMI DVI AMD Graphics Card</p>
+                    <p class="amt">&#8377;8,999.00 </b><del>&#8377;10,999.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+        </div>
+        <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/peripherals/graphic cards/zotac gc.jpg" style="width:100%; height: 70%; margin:auto;"><br>
+                    <p class="desc" ><b>Zotac Gaming Geforce RTX 3060 Twin Edge Gddr6 12Gb 192Bit Pcie 3.0(3 Years Warranty)</p>
+                    <p class="amt">&#8377;25,129.00</b> <del>&#8377;32,100.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+        </div>
+
+
+           
+            
+   
+    <div style="display: flex;">
+        <h2 style="padding: 20px; padding-top: 50px;">Hard Disk Drives</h2>
+    </div>
+    <div class="c">
+
+        <a href="#" style="text-decoration: none;">
+            <div class="homecontent">
+                <img class="lazyloaded" src="images/products/peripherals/harddisk/wd 1.jpg" style="width:100%; height: 70%; margin:auto;">
+                <p class="desc" ><b>Western Digital WD 1TB My Passport Portable Hard Disk Drive, USB 3.0 with Automatic Backup.</p>
+                <p class="amt">&#8377;5,398.00</b> <del>&#8377;8,599.00</del> </p>
+                <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+        </a>
+        
+    </div>
+    <div class="c">
+        <a href="#" style="text-decoration: none;">
+            <div class="homecontent">
+                <img class="lazyloaded" src="images/products/peripherals/harddisk/wd2.jpg" style="width:100%; height: 70%; margin:auto;">
+                <p class="desc"><b>Seagate Ultra Touch HDD 4TB External Hard Drive, USB-C Compatibility with PC, Mac, and Chromebook. </p>
+                <p class="amt">&#8377;3,199.00</b> <del>&#8377;5,750.00</del> </p>
+                <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+        </a>
+        </div>
+        <div class="c">
+        <a href="#" style="text-decoration: none;">
+            <div class="homecontent">
+                <img class="lazyloaded" src="images/products/peripherals/harddisk/xbox.jpg" style="width:100%; height: 70%; margin:auto;">
+                <p class="desc"><b>Seagate Game Drive for Xbox Halo Infinite SE 5TB External Hard Drive HDD, USB 3.2 and 3-Year Data Recovery Services.</p>
+                <p class="amt">&#8377;12,199.00</b><del>&#8377;20,150.00</del> </p>
+                <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+        </a>
+    </div>
+    <div class="c">
+        <a href="#" style="text-decoration: none;">
+            <div class="homecontent">
+                <img class="lazyloaded" src="images/products/peripherals/harddisk/adata.jpg" style="width:100%; height: 70%; margin:auto;">
+                <p class="desc"><b>ADATA HD710 Pro 2TB 3.5 inch SATA III External Hard Drive/HDD with IP65 Rating Blue, for Windows</p>
+                <p class="amt">&#8377;7,459.00</b><del>&#8377;9,999.00</del> </p>
+                <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+        </a>
+    </div>
+    <div class="c">
+        <a href="#" style="text-decoration: none;">
+            <div class="homecontent">
+                <img class="lazyloaded" src="images/products/peripherals/harddisk/toshiba.jpg" style="width:100%; height: 70%; margin:auto;">
+                <p class="desc"><b>TOSHIBA Canvio Basics 1TB Portable External HDD - USB 3.2 for PC Laptop Windows and Mac, 3 Years Warranty</p>
+                <p class="amt">&#8377;4,999.00 </b><del>&#8377;7,999.00</del> </p>
+                <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+        </a>
+    </div>
+    <div class="c">
+        <a href="#" style="text-decoration: none;">
+            <div class="homecontent">
+                <img class="lazyloaded" src="images/products/peripherals/harddisk/wd3.jpg" style="width:100%; height: 70%; margin:auto;"><br>
+                <p class="desc" ><b>TOSHIBA Canvio Basics 1TB Portable External HDD - USB 3.2 for PC Laptop Windows and Mac, 3 Years Warranty</p>
+                <p class="amt">&#8377;7,129.00</b> <del>&#8377;12,100.00</del> </p>
+                <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+        </a>
+    </div>
+    <div class="c">
+        <a href="#" style="text-decoration: none;">
+            <div class="homecontent">
+                <img class="lazyloaded" src="images/products/peripherals/harddisk/samsung.jpg" style="width:100%; height: 70%; margin:auto;"><br>
+                <p class="desc" ><b>Samsung T7 Shield 1TB, Portable SSD, up-to 1050MB/s, USB 3.2 Gen2, Rugged, IP65 Water</p>
+                <p class="amt">&#8377;10,129.00</b> <del>&#8377;15,100.00</del> </p>
+                <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+        </a>
+    </div>
+    <div class="c">
+
+        <a href="#" style="text-decoration: none;">
+            <div class="homecontent">
+                <img class="lazyloaded" src="images/products/peripherals/harddisk/sandisk.jpg" style="width:100%; height: 70%; margin:auto;"><br>
+                <p class="desc" ><b>Sandisk Extreme Portable 1TB, 1050MB/s R, 1000MB/s W, 3mtr Drop Protection, IP65 Water/dust Resistance</p>
+                <p class="amt">&#8377;8,129.00</b> <del>&#8377;16,170.00</del> </p>
+                <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+        </a>
+    </div>
+
+
+    
+
+    <div style="display: flex;">
+        <h2 style="padding: 20px; padding-top: 50px;">Monitors</h2>
+    </div>
+    <div class="c">
+        <a href="#" style="text-decoration: none;">
+            <div class="homecontent">
+                <img class="lazyloaded" src="images/products/peripherals/monitors/asus.jpg" style="width:100%; height: 70%; margin:auto;">
+                <p class="desc" ><b>Acer EK220Q 21.5 Inch (54.61 cm) Full HD (1920x1080) Pixels VA Panel LCD Monitor with LED Back Light.</p>
+                <p class="amt">&#8377;5,398.00</b> <del>&#8377;8,599.00</del> </p>
+                <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+        </a>
+    </div>
+    <div class="c">
+        <a href="#" style="text-decoration: none;">
+            <div class="homecontent">
+                <img class="lazyloaded" src="images/products/peripherals/monitors/benq.jpg" style="width:100%; height: 70%; margin:auto;">
+                <p class="desc"><b>BenQ GW2283, 22 inch (55 cm) 1920x1080 Pixels IPS, Full HD Bezel-Less Monitor- Eye Care, Anti-Glare. </p>
+                <p class="amt">&#8377;7,199.00</b> <del>&#8377;9,750.00</del> </p>
+                <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+        </a>
+    </div>
+    <div class="c">
+        <a href="#" style="text-decoration: none;">
+            <div class="homecontent">
+                <img class="lazyloaded" src="images/products/peripherals/monitors/sonic.jpg" style="width:100%; height: 70%; margin:auto;">
+                <p class="desc"><b>ViewSonic Omni 32 Inch 165Hz IPS Qhd 2K 2560X1440 Pixels Gaming Led Monitor.</p>
+                <p class="amt">&#8377;22,199.00</b><del>&#8377;29,150.00</del> </p>
+                <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+        </a>
+    </div>
+    <div class="c">
+        <a href="#" style="text-decoration: none;">
+            <div class="homecontent">
+                <img class="lazyloaded" src="images/products/peripherals/monitors/onleplus.jpg" style="width:100%; height: 70%; margin:auto;">
+                <p class="desc"><b>OnePlus 24 in Full Hd LCD Monitor Led Backlit with 3-Side Bezel Less,USB Type-C Connectivity with 18W Charging</p>
+                <p class="amt">&#8377;7,439.00</b><del>&#8377;9,999.00</del> </p>
+                <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+        </a>
+    </div><div class="c">
+        <a href="#" style="text-decoration: none;">
+            <div class="homecontent">
+                <img class="lazyloaded" src="images/products/peripherals/monitors/lenvo.jpg" style="width:100%; height: 70%; margin:auto;">
+                <p class="desc"><b>Lenovo Gaming G-Series Curved 32 Inch (81.3cm) 2560x1440 2K Monitor |165Hz| 99% sRGB, 1ms</p>
+                <p class="amt">&#8377;24,999.00 </b><del>&#8377;27,999.00</del> </p>
+                <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+        </a>
+    </div>
+    <div class="c">
+        <a href="#" style="text-decoration: none;">
+            <div class="homecontent">
+                <img class="lazyloaded" src="images/products/peripherals/monitors/acer2.jpg
+                " style="width:100%; height: 70%; margin:auto;"><br>
+                <p class="desc" ><b>Acer SA222Q 21.5 Inch Full HD IPS Ultra Slim (7.2mm Thick) Backlight LED LCD Monitor</p>
+                <p class="amt">&#8377;7,129.00</b> <del>&#8377;12,100.00</del> </p>
+                <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+        </a>
+    </div>
+    <div class="c">
+        <a href="#" style="text-decoration: none;">
+            <div class="homecontent">
+                <img class="lazyloaded" src="images/products/peripherals/monitors/zeb.jpg" style="width:100%; height: 70%; margin:auto;"><br>
+                <p class="desc" ><b>ZEBRONICS A24FHD LED Monitor, 24 inch (60.96cm), 250 nits, 75Hz, Slim Design, FHD, 1080p</p>
+                <p class="amt">&#8377;6,129.00</b> <del>&#8377;15,100.00</del> </p>
+                <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+        </a>
+    </div>
+    <div class="c">
+        <a href="#" style="text-decoration: none;">
+            <div class="homecontent">
+                <img class="lazyloaded" src="images/products/peripherals/monitors/forntech.jpg" style="width:100%; height: 70%; margin:auto;"><br>
+                <p class="desc" ><b>FRONTECH 32 Inch PRO Series LED Gaming Monitor | Refresh Rate 75Hz,IPS Panel | Full HD 1080p,Wall Mountable</p>
+                <p class="amt">&#8377;8,129.00</b> <del>&#8377;16,170.00</del> </p>
+                <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+        </a>
+    </div>
+    <div class="c">
+
+        <a href="#" style="text-decoration: none;">
+            <div class="homecontent">
+                <img class="lazyloaded" src="images/products/peripherals/monitors/samsung.jpg" style="width:100%; height: 70%; margin:auto;">
+                <p class="desc"><b>Samsung 32-inch(80cm) 3840 X 2160 Pixels 4K UHD, 1500R Curved Monitor, Bezel Less Design, Game Mode</p>
+                <p class="amt">&#8377;24,999.00 </b><del>&#8377;27,999.00</del> </p>
+                <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+        </a>
+    </div>
+    <div class="c">
+        <a href="#" style="text-decoration: none;">
+            <div class="homecontent">
+                <img class="lazyloaded" src="images/products/peripherals/monitors/sonic2.jpg" style="width:100%; height: 70%; margin:auto;"><br>
+                <p class="desc" ><b>ViewSonic 32 Inch Full Hd 1920X1080 Resolution IPS Freesync Wide Monitor 75Hz Refresh Rate</p>
+                <p class="amt">&#8377;13,129.00</b> <del>&#8377;22,100.00</del> </p>
+                <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+        </a>
+    </div>
+    <div class="c">
+        <a href="#" style="text-decoration: none;">
+            <div class="homecontent">
+                <img class="lazyloaded" src="images/products/peripherals/monitors/hp.jpg" style="width:100%; height: 70%; margin:auto;"><br>
+                <p class="desc" ><b>HP M27f 27-inches 68.6cm 1920 x 1080 Pixels Eye-Safe Certified Full HD IPS 3-Sided Micro-Edge Monitor</p>
+                <p class="amt">&#8377;12,129.00</b> <del>&#8377;19,100.00</del> </p>
+                <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+        </a>
+    </div>
+    <div class="c">
+        <a href="#" style="text-decoration: none;">
+            <div class="homecontent">
+                <img class="lazyloaded" src="images/products/peripherals/monitors/sonic3.jpg" style="width:100%; height: 70%; margin:auto;"><br>
+                <p class="desc" ><b>ViewSonic Omni 24 Inch 165Hz IPS Full Hd 1920X1080 Pixels Gaming Led Monitor</p>
+                <p class="amt">&#8377;8,129.00</b> <del>&#8377;16,170.00</del> </p>
+                <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+            </div>
+        </a>
+    </div>
+
+
+        <div style="display: flex;">
+            <h2 style="padding: 20px; ">Motherboard</h2>
+        </div>
+        <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/peripherals/motherboard/msi.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc" ><b>MSI B450M Pro-Vdh Max Gaming Fullat Motherboard Ddr4.</p>
+                    <p class="amt">&#8377;5,389.00</b> <del>&#8377;12,599.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+        </div>
+        <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/peripherals/motherboard/msi2.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc"><b>MSI MPG B650 Edge WiFi AMD AM5 ATX Motherboard, 4X DDR5~128GB. </p>
+                    <p class="amt">&#8377;23,199.00</b> <del>&#8377;35,750.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+        </div>
+        <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/peripherals/motherboard/giga.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc"><b>GIGABYTE B450M DS3H V2 (AMD Ryzen AM4/Micro ATX/M.2/HMDI/DVI/USB 3.1/DDR4/Motherboard).</p>
+                    <p class="amt">&#8377;5,599.00</b><del>&#8377;9,550.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+        </div>
+        <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/peripherals/motherboard/ant.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc"><b>Ant Value H61MAD3-N mATX Gaming Motherboard LGA1155 Support Intel 2nd and 3rd Generation i3/i5/i7 DDR3</p>
+                    <p class="amt">&#8377;1,599.00</b><del>&#8377;3,999.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+        </div>
+        <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/peripherals/motherboard/asus.jpg" style="width:100%; height: 70%; margin:auto;">
+                    <p class="desc"><b>ASUS Prime Z790-P WiFi Lga 1700(Intel 13Th &12Th Gen) ATX Motherboard</p>
+                    <p class="amt">&#8377;28,999.00 </b><del>&#8377;40,999.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a>
+        </div>
+        <div class="c">
+            <a href="#" style="text-decoration: none;">
+                <div class="homecontent">
+                    <img class="lazyloaded" src="images/products/peripherals/motherboard/asus2.jpg" style="width:100%; height: 70%; margin:auto;"><br>
+                    <p class="desc" ><b>ASUS ROG Strix Z790-F Gaming WiFi LGA 1700 ATX Motherboard with 16 + 1 Power Stages, DDR5</p>
+                    <p class="amt">&#8377;45,129.00</b> <del>&#8377;52,100.00</del> </p>
+                    <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                </div>
+            </a></div><br>
+
+
+            <div style="display: flex;">
+                <h2 style="padding: 20px; ">Power Supply</h2>
+            </div>
+            <div class="c">
+                <a href="#" style="text-decoration: none;">
+                    <div class="homecontent">
+                        <img class="lazyloaded" src="images/products/peripherals/power supply/cm.jpg" style="width:100%; height: 70%; margin:auto;">
+                        <p class="desc" ><b>Cooler Master V750 SFX Gold 80 Plus Gold Certified, Fully Modular Power Supply.</p>
+                        <p class="amt">&#8377;13,389.00</b> <del>&#8377;22,599.00</del> </p>
+                        <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                    </div>
+                </a>
+            </div>
+            <div class="c">
+                <a href="#" style="text-decoration: none;">
+                    <div class="homecontent">
+                        <img class="lazyloaded" src="images/products/peripherals/power supply/ant.jpg" style="width:100%; height: 70%; margin:auto;">
+                        <p class="desc"><b>Ant Esports VS400L NonModular High Efficiency Gaming Power Supply/PSU with Continuous Power & 120mm Silent Fan. </p>
+                        <p class="amt">&#8377;999.00</b> <del>&#8377;2,750.00</del> </p>
+                        <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                    </div>
+                </a>
+            </div>
+            <div class="c">
+                <a href="#" style="text-decoration: none;">
+                    <div class="homecontent">
+                        <img class="lazyloaded" src="images/products/peripherals/power supply/ant700.jpg" style="width:100%; height: 70%; margin:auto;">
+                        <p class="desc"><b>Ant Esports VS700L NonModular High Efficiency Gaming Power Supply/PSU with 1 x PCIe and 120mm Silent Fan.</p>
+                        <p class="amt">&#8377;2,599.00</b><del>&#8377;5,550.00</del> </p>
+                        <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                    </div>
+                </a>
+            </div>
+            <div class="c">
+                <a href="#" style="text-decoration: none;">
+                    <div class="homecontent">
+                        <img class="lazyloaded" src="images/products/peripherals/power supply/ant600.jpg" style="width:100%; height: 70%; margin:auto;">
+                        <p class="desc"><b>Ant Esports VS600L Non-Modular High Efficiency Gaming Power Supply/PSU with 1 x PCIe and 120mm Silent Fan</p>
+                        <p class="amt">&#8377;2,299.00</b><del>&#8377;3,999.00</del> </p>
+                        <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                    </div>
+                </a>
+            </div>
+            <div class="c">
+                <a href="#" style="text-decoration: none;">
+                    <div class="homecontent">
+                        <img class="lazyloaded" src="images/products/peripherals/power supply/zeb.jpg" style="width:100%; height: 70%; margin:auto;">
+                        <p class="desc"><b>ZEBRONICS ZS500 500W Non Modular Power Supply with Silent 120mm RGB Fan</p>
+                        <p class="amt">&#8377;1,499.00 </b><del>&#8377;3,999.00</del> </p>
+                        <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                    </div>
+                </a>
+            </div>
+            <div class="c">
+                <a href="#" style="text-decoration: none;">
+                    <div class="homecontent">
+                        <img class="lazyloaded" src="images/products/peripherals/power supply/daa.jpg" style="width:100%; height: 70%; margin:auto;"><br>
+                        <p class="desc" ><b>Deepcool DQ850M-V3L, 850 Watt, 80 Plus Gold Fully Modular Power Supply/PSU for Gaming PC</p>
+                        <p class="amt">&#8377;9,129.00</b> <del>&#8377;12,100.00</del> </p>
+                        <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                    </div>
+                </a>
+            </div>
+            <div class="c">
+                <a href="#" style="text-decoration: none;">
+                    <div class="homecontent">
+                        <img class="lazyloaded" src="images/products/peripherals/power supply/game.jpg" style="width:100%; height: 70%; margin:auto;">
+                        <p class="desc"><b>GAMDIAS Kratos M1-750B | RGB Desktop 750 Watts Power Supply | 80 Plus Bronze Efficiency PSU</p>
+                        <p class="amt">&#8377;5,499.00 </b><del>&#8377;9,999.00</del> </p>
+                        <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                    </div>
+                </a>
+            </div>
+            <div class="c">
+                <a href="#" style="text-decoration: none;">
+                    <div class="homecontent">
+                        <img class="lazyloaded" src="images/products/peripherals/power supply/msi.jpg" style="width:100%; height: 70%; margin:auto;"><br>
+                        <p class="desc" ><b>MSI MPG A850G PCIE5 Digital Gaming Power Supply Unit, 80 Plus Gold Certified, 850 Watt</p>
+                        <p class="amt">&#8377;13,129.00</b> <del>&#8377;19,100.00</del> </p>
+                        <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                    </div>
+                </a></div><br>
+
+
+                <div style="display: flex;">
+                    <h2 style="padding: 20px; ">Processors</h2>
+                </div>
+                <div class="c">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="homecontent">
+                            <img class="lazyloaded" src="images/products/peripherals/processors/ryzen.jpg" style="width:100%; height: 70%; margin:auto;">
+                            <p class="desc" ><b>AMD Ryzen™ 5 5600G Desktop Processor (6-core/12-thread, 19MB Cache, up to 4.4 GHz max Boost).</p>
+                            <p class="amt">&#8377;11,363.00</b> <del>&#8377;22,599.00</del> </p>
+                            <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="c">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="homecontent">
+                            <img class="lazyloaded" src="images/products/peripherals/processors/ryzen2.jpg" style="width:100%; height: 70%; margin:auto;">
+                            <p class="desc"><b>AMD Ryzen 5 3600 Desktop Processor 6 Cores up to 4.2 GHz 35MB Cache Socket AM4. </p>
+                            <p class="amt">&#8377;8,199.00</b> <del>&#8377;10,750.00</del> </p>
+                            <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="c">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="homecontent">
+                            <img class="lazyloaded" src="images/products/peripherals/processors/intel.jpg" style="width:100%; height: 70%; margin:auto;">
+                            <p class="desc"><b>Intel® Core™ i9-14900K New Gaming Desktop Processor 24 cores (8 P-cores + 16 E-cores) with Integrated Graphics.</p>
+                            <p class="amt">&#8377;64,599.00</b><del>&#8377;72,550.00</del> </p>
+                            <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                        </div>
+                    </a>
+                     </div>
+                     <div class="c">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="homecontent">
+                            <img class="lazyloaded" src="images/products/peripherals/processors/intel2.jpg" style="width:100%; height: 70%; margin:auto;">
+                            <p class="desc"><b>Intel® Core i5-10400 Processor (12M Cache, up to 4.30 GHz) BGA 437 Socket</p>
+                            <p class="amt">&#8377;11,599.00</b><del>&#8377;16,999.00</del> </p>
+                            <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="c">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="homecontent">
+                            <img class="lazyloaded" src="images/products/peripherals/processors/intel3.jpg" style="width:100%; height: 70%; margin:auto;">
+                            <p class="desc"><b>CORE I5 4590,4570 (4TH Generation) Processor 3.3 GHz Upto 3.7 GHz LGA 1150 Socket 4 Cores 4 Threads.</p>
+                            <p class="amt">&#8377;2,499.00 </b><del>&#8377;7,999.00</del> </p>
+                            <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="c">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="homecontent">
+                            <img class="lazyloaded" src="images/products/peripherals/processors/intel4.jpg" style="width:100%; height: 70%; margin:auto;"><br>
+                            <p class="desc" ><b>Intel Core i3 12100F 12th Gen Generation Desktop PC Processor 4 CPU with 12MB Cache</p>
+                            <p class="amt">&#8377;7,129.00</b> <del>&#8377;12,100.00</del> </p>
+                            <p style="display: flex;" class="btn"><button>Add to Cart</button><button style="margin-left: 2px;">Buy Now</button></p>
+                        </div>
+                    </a></div><br>
+                    <div class="bottom">
+               
+                        <div class="info">
+                            <h1><b>SUPPORT</b></h1><br>
+                            <p><a class="abc" href="contactus.html">Contact Us</a></p>
+                        </div>
+                
+                        <div class="info">
+                            <h1><b>INFORMATION</b></h1><br>
+                            <p><a class="abc" href="footer/aboutus.html">About Us</a></p>
+                            <p><a  class="abc" href="footer/refurbish.html">Refurbishing Information</a></p>
+                            <p><a class="abc" href="footer/installation.html">Installation</a></p>
+                        </div>
+                
+                        <div class="info">
+                            <h1>POLICIES</h1><br>
+                            <p> <a class="abc" href="footer/privacypolicy.html">Privacy & Policy</a></p>
+                            <p><a class="abc" href="footer/termscondition.html">Terms & Condition</a></p>
+                            <p><a class="abc" href="footer/cancelrefund.html">Cancel & Refund Policy</a></p>
+                            <p><a class="abc" href="footer/shipping.html">Shipping & Delivery Policy</a></p>
+                        </div>
+                
+                        <div class="info">
+                            <h1>FAQ'S</h1><br>
+                     
+                            <p> <a class="abc" href="footer/warrenty.html">Warrenty Upgrade</a></p>
+                            <p><a class="abc" href="footer/installation.html">Installation & Configuration</a></p>
+                            <p><a class="abc" href="footer/exchange.html">Exchange & Buy Pack</a></p>
+                        </div>    
+                
+                    </div>
+                
+                    <div class="bot2">
+                        <img src="footer/bottom.png" style="height: 80px; width: 70%;" >
+                    </div>
+                
+                    <div class="bot3">
+                        <b><a href="footer/termscondition.html">Terms & Condition</a></b> 
+                    </div>
+                
+                    <div class="bot4">
+                        <img src="footer/payment_icon.png" style="height: 80px; width: 70%;" >
+                    </div>
+    </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
