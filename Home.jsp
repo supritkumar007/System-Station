@@ -1,3 +1,43 @@
+<%
+    String username = request.getParameter("username");
+    String password = request.getParameter("password");
+
+    // Hash the password (This is just a placeholder, you should use a secure hashing algorithm)
+    String hashedPassword = password; // Placeholder, replace with actual hashing logic
+
+    try {
+        Class.forName("com.mysql.jdbc.Driver");
+        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/system_station", "root", "9353");
+        Statement stmt = conn.createStatement();
+
+        // Use prepared statement to prevent SQL injection
+        PreparedStatement pstmt = conn.prepareStatement(
+            "SELECT 'admin' AS designation, adminname FROM admin WHERE adminname = ? AND adpass = ? " +
+            "UNION " +
+            "SELECT 'customer' AS designation, username FROM register WHERE username = ? AND password = ? " +
+            "UNION " + // Added space after UNION
+            "SELECT 'delivery' AS designation, d_name FROM service WHERE d_name = ? AND d_pass = ?"
+        );
+        pstmt.setString(1, username);
+        pstmt.setString(2, hashedPassword);
+        pstmt.setString(3, username);
+        pstmt.setString(4, hashedPassword);
+        pstmt.setString(5, username);
+        pstmt.setString(6, hashedPassword);
+        ResultSet rs = pstmt.executeQuery();
+
+        if (rs.next()) {
+            String designation = rs.getString("designation");
+            if (designation.equals("admin")) {
+                // Redirect to admin page
+                response.sendRedirect("Admindashboard.jsp");
+            } else if (designation.equals("delivery")) {
+                // Redirect to delivery page (fixed typo)
+                response.sendRedirect("delivery.jsp");
+            } else if (designation.equalsIgnoreCase("customer")) {
+                // Redirect to home page
+                %>
+
 <!DOCTYPE html>
 <html>
 <head>
